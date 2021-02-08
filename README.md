@@ -21,10 +21,12 @@ Projekt selbst aufsetzen
 * [LoadBalancer](#LoadBalancer)
 * [IoTKit Programm](#iotkit-programm)
 
+***
 ### Hardware Requirements
 
 Um das Projekt 1 zu 1 umzusetzen, benötigt man 4 verschiedene Server auf denen Ubuntu 20.04 installiert werden kann.
 
+***
 ### Netzwerk
 
 <img src="images/Network.png" alt="Netzwerkdiagramm">
@@ -110,6 +112,7 @@ FLUSH PRIVILEGES;
 
 Nun ist die Konfiguration des MySQL-Servers abgeschlossen.
 
+***
 ### Applikationsinstanzen
 
 Die Applikationsinstanzen sind CX11 Cloud-Server, die bei Hetzner gehostet werden. Somit mussten wir das Betriebssystem nicht aufsetzen sondern konntes es aus einer Liste auswählen, hier haben wir uns für Ubuntu 20.04 entschieden.
@@ -322,7 +325,7 @@ Um einen Benutzer erstellen zu können, müssen wir im Verzeichnis der Appliakti
 
 ```php artisan make:user "Vorname Nachname" "example@example.org" "Password"```
 
-
+***
 ### LoadBalancer
 
 Der Load-Balancer ist ein CX11 Cloud-Server, der bei Hetzner gehostet wird. Als Betriebssystem läuft Ubuntu 20.04. Da die CLoud-Server automatisch provisioniert werden mussten wir hier keine Schritte unternehmen um den Server selbst aufzusetzen.
@@ -405,6 +408,7 @@ Auch hier haben wir den automatischen redirect von HTTP auf HTTPS aktiviert
 
 Die Verbindung zwischen Client udn Load-Balancer wird per HTTPS aufgebaut. Ebenfalls sind die Appliaktionsinstanzen über HTTPS abgesichert und der Traffic zwischen Load Balancer und Instanzen läuft auch über HTTPS.
 
+***
 ### IoTKit Programm
 
 Anstatt ein Programm zu erweitern haben wir uns dazu entschieden einen eigenen Service zu entwicklen. Hierfür müssen folgende Funktionalitäten im Programm für den Mikroprozessor implementiert werden:
