@@ -14,12 +14,12 @@ Der Cloud-Service läuft auf 2 Applikationsinstanzen, einem Load-Balancer und 2 
 Projekt selbst aufsetzen
 ------------------------
 
-* [Hardware Requirements](#Hardware Requirements)
+* [Hardware Requirements](#Hardware-Requirements)
 * [Netzwerk](#netzwerk)
 * [Datenbank](#datenbank)
 * [Applikationsinstanzen](#Applikationsinstanzen)
 * [LoadBalancer](#LoadBalancer)
-* [mbed Programm]
+* [IoTKit Programm](#iotkit-programm)
 
 ### Hardware Requirements
 
@@ -405,7 +405,7 @@ Auch hier haben wir den automatischen redirect von HTTP auf HTTPS aktiviert
 
 Die Verbindung zwischen Client udn Load-Balancer wird per HTTPS aufgebaut. Ebenfalls sind die Appliaktionsinstanzen über HTTPS abgesichert und der Traffic zwischen Load Balancer und Instanzen läuft auch über HTTPS.
 
-### mbed Programm
+### IoTKit Programm
 
 Anstatt ein Programm zu erweitern haben wir uns dazu entschieden einen eigenen Service zu entwicklen. Hierfür müssen folgende Funktionalitäten im Programm für den Mikroprozessor implementiert werden:
 
